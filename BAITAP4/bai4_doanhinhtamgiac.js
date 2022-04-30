@@ -2,7 +2,7 @@ function sos() {
   var firstnumberEl = +document.getElementById("firstnumber").value;
   var secondnumberEl = +document.getElementById("secondnumber").value;
   var thirdnumberEl = +document.getElementById("thirdnumber").value;
-  if ((firstnumberEl === secondnumberEl) === thirdnumberEl) {
+  if ((firstnumberEl === secondnumberEl) && secondnumberEl === thirdnumberEl) {
     var triangleEl = "hình tam giác đều";
   } else if (
     firstnumberEl === secondnumberEl ||
@@ -19,5 +19,5 @@ function sos() {
   } else {
     var triangleEl = "một loại tam giác nào đó";
   }
-  document.getElementById("result").innerHTML = ` 👉 ${ triangleEl}`;
+  document.getElementById("result").innerHTML = ` 👉 ${triangleEl}`;
 }
